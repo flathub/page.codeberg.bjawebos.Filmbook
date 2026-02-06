@@ -1,7 +1,7 @@
 {
     "id" : "page.codeberg.bjawebos.Filmbook",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "48",
+    "runtime-version" : "49",
     "sdk" : "org.gnome.Sdk",
     "sdk-extensions" : [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -18,7 +18,8 @@
         "env" : {
             "RUST_BACKTRACE" : "1",
             "RUST_LOG" : "filmbook=debug",
-            "CARGO_NET_OFFLINE" : "true"
+            "CARGO_NET_OFFLINE" : "true",
+	    "CARGO_HOME" : "/run/build/filmbook/cargo"
         }
     },
     "cleanup" : [
@@ -37,12 +38,15 @@
         	"name" : "filmbook",
         	"builddir" : true,
         	"buildsystem" : "meson",
+        	"config-opts" : [
+                "-Dflatpak=true"
+            ],
         	"sources" : [
         		{
         			"type": "git",
         			"url": "https://codeberg.org/bjawebos/filmbook.git",
-        			"tag": "v0.1.4",
-        			"commit": "f8f47154339e78d1fb23aee99ec3e3ad1b982179"
+        			"tag": "v0.2.0",
+        			"commit": "0f38726a528d53c06ecb7933812092bca6ee7bb4"
         		},
         	  "cargo-sources.json"
             ]
