@@ -19,6 +19,7 @@
             "RUST_BACKTRACE" : "1",
             "RUST_LOG" : "filmbook=debug",
             "CARGO_NET_OFFLINE" : "true"
+	    "CARGO_HOME" : "/run/build/filmbook/cargo"
         }
     },
     "cleanup" : [
@@ -45,7 +46,7 @@
         			"type": "git",
         			"url": "https://codeberg.org/bjawebos/filmbook.git",
         			"tag": "v0.2.0",
-        			"commit": "fd298cdc9d66f470db094d6954320f0726cbe342"
+        			"commit": "2dfc992a9751f6b9fda2911e52eb351719f73d62"
         		},
         	  "cargo-sources.json"
             ]
