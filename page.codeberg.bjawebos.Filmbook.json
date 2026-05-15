@@ -1,7 +1,7 @@
 {
     "id" : "page.codeberg.bjawebos.Filmbook",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "49",
+    "runtime-version" : "50",
     "sdk" : "org.gnome.Sdk",
     "sdk-extensions" : [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -27,15 +27,12 @@
         	"name" : "filmbook",
         	"builddir" : true,
         	"buildsystem" : "meson",
-        	"config-opts" : [
-                "-Dflatpak=true"
-            ],
         	"sources" : [
         		{
         			"type": "git",
         			"url": "https://codeberg.org/bjawebos/filmbook.git",
-        			"tag": "v0.2.1",
-        			"commit": "f0c7f97746e7bdc2290baf3e37229b7c13d3e174"
+        			"tag": "v0.3.0",
+        			"commit": "192c3c8978be5f0daae9ceb68298d67119868a23"
         		},
         	  "cargo-sources.json"
             ]
