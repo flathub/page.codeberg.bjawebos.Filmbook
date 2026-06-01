@@ -31,8 +31,8 @@
         		{
         			"type": "git",
         			"url": "https://codeberg.org/bjawebos/filmbook.git",
-        			"tag": "v0.3.1",
-        			"commit": "a373874a18030ec1da30daaa5b9b6fb5225b4840"
+        			"tag": "v0.3.2",
+        			"commit": "60cf1f3e658649014ba6c3ddf4b5ae64340ab600"
         		},
         	  "cargo-sources.json"
             ]
